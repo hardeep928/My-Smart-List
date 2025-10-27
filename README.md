@@ -1,16 +1,111 @@
-# React + Vite
+# 📝 My Smart List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**My Smart List** is a simple and elegant task management app built with **React** and **Vite**.
+It helps users create, organize, and manage daily tasks efficiently — all stored locally in the browser using **localStorage**, so your data stays even after refreshing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* ✨ Create, Edit, and Delete tasks easily
+* 📂 Categorize tasks (Work, Study, Personal, Health)
+* ⏰ Set due dates and priority levels (High, Medium, Low)
+* 💾 Data stored locally using **localStorage**
+* 📱 Fully responsive design for both desktop and mobile
+* 🧠 Smart UI with modern styling and smooth navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React + Vite
+* **Routing:** React Router
+* **Forms:** React Hook Form
+* **Styling:** Tailwind CSS
+* **Storage:** Browser LocalStorage
+
+---
+
+## 📸 Screenshots
+
+### 🖥️ Desktop View
+
+*(Add a screenshot here)*
+
+### 📱 Mobile View
+
+*(Add a mobile screenshot here)*
+
+---
+
+## ⚙️ Installation and Setup
+
+Follow these simple steps to run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/hardeep928/My-Smart-List.git
+
+# 2. Navigate into the project folder
+cd My-Smart-List
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
+npm run dev
+```
+
+Now open your browser and visit:
+👉 **[http://localhost:5173](http://localhost:5173)**
+
+---
+
+## 📂 Folder Structure
+
+```
+My-Smart-List/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   │   ├── Create.jsx
+│   │   ├── MyLists.jsx
+│   ├── hooks/
+│   │   └── localStorage.js
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+├── vercel.json
+└── README.md
+```
+
+---
+
+## 🧠 How It Works
+
+* All tasks are stored in the browser's **localStorage**.
+* When a task is created, it is saved instantly and persists even after reloading.
+* You can edit or delete any task — the app updates your local data automatically.
+* Each user sees their own tasks (if you later integrate Auth0 or user-based storage).
+
+---
+
+## 🌐 Live Demo
+
+🔗 [View on Vercel](https://my-smart-list.vercel.app)
+
+---
+
+## 👨‍💻 Author
+
+**Hardeep Singh**
+🎓 MCA Student | 💻 Frontend Developer | 🚀 Learning Frontend by Heart
+📬 Feel free to connect or give feedback!
+
+---
+
+## 🪪 License
+
+This project is open-source and available under the **MIT License**.
