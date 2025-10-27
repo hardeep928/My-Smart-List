@@ -12,7 +12,6 @@ const Create = ({ data, setData, editIndex, setEditIndex }) => {
     setValue,
     formState: { errors },
   } = useForm();
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   // Prefill form when editing
   useEffect(() => {
@@ -42,13 +41,8 @@ const Create = ({ data, setData, editIndex, setEditIndex }) => {
     setData(updatedData);
     saveLocalData(updatedData);
 
-    setFormSubmitted(true);
-    reset();
-
-    setTimeout(() => {
-      setFormSubmitted(false);
-      navigate("/mylists");
-    }, 1000);
+    // Redirect to MyLists after saving
+    navigate("/mylists");
   };
 
   return (
@@ -56,12 +50,6 @@ const Create = ({ data, setData, editIndex, setEditIndex }) => {
       <h1 className="text-2xl font-semibold text-center mb-6">
         {editIndex !== null ? "Edit Task" : "Create Task"}
       </h1>
-
-      {formSubmitted && (
-        <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-2 mb-4 rounded-md">
-          Form Submitted Successfully!
-        </div>
-      )}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <div>
@@ -148,7 +136,7 @@ const Create = ({ data, setData, editIndex, setEditIndex }) => {
             type="submit"
             className="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
           >
-            Save Changes
+            Save
           </button>
           <button
             type="button"

@@ -1,15 +1,14 @@
+import { useNavigate } from "react-router-dom"; // Import useNavigate for redirection
 import Inspiration from "./Inspiration";
 import WhyUse from "./WhyUse";
-import { useAuth0 } from "@auth0/auth0-react";
 import checklist from "../src/assets/Checklist-cuate.png";
 
 const Home = () => {
-  const { loginWithRedirect } = useAuth0();
-  const { isAuthenticated, isLoading, logout } = useAuth0();
+  const navigate = useNavigate(); // Initialize the navigate function
 
-  if (isLoading) {
-    return <div>Loading ...</div>;
-  }
+  const handleGetStarted = () => {
+    navigate("/create"); // Redirect to the Create page
+  };
 
   return (
     <>
@@ -23,18 +22,14 @@ const Home = () => {
             <br /> My Smart List
           </h2>
 
-          {isAuthenticated ? (
-            ""
-          ) : (
-            <div>
-              <button
-                onClick={() => loginWithRedirect()}
-                className="bg-white text-[#f65562] py-2 md:px-4 px-6 rounded-lg font-medium cursor-pointer md:mt-3 hover:bg-black hover:text-white hover:shadow-lg "
-              >
-                Login
-              </button>
-            </div>
-          )}
+          <div>
+            <button
+              onClick={handleGetStarted} // Handle redirection when button is clicked
+              className="bg-white text-[#f65562] py-2 md:px-4 px-6 rounded-lg font-medium cursor-pointer md:mt-3 hover:bg-black hover:text-white hover:shadow-lg"
+            >
+              Get Started
+            </button>
+          </div>
         </div>
 
         <img
