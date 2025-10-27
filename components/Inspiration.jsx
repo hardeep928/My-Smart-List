@@ -14,7 +14,7 @@ const Inspiration = () => {
 
   return (
     <div className="bg-white min-h-min pb-5">
-      <h1 className="font-bold md:text-4xl text-2xl md:p-10 p-5 md:ml-[5em] ">
+      <h1 className="font-bold md:text-4xl text-2xl md:p-10 p-5 md:ml-[3.7em] ">
         Today's Inspiration
       </h1>
       <div className="pb-3 bg-gray-300 mx-4 md:max-w-4xl rounded-2xl mb-2 md:mx-auto text-center md:flex md:justify-center md:gap-10">

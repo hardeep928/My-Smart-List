@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
+import logo from "../src/assets/list.png";
 
 const Header = () => {
   const { loginWithRedirect } = useAuth0();
@@ -12,14 +13,10 @@ const Header = () => {
 
   return (
     <>
-      <div className="header flex justify-between md:p-4 md:px-8 px-3 p-3 shadow-lg items-center top-0 sticky bg-white">
+      <div className="header flex justify-between md:p-2 md:px-8 px-3 p-2 shadow-lg items-center top-0 sticky bg-white">
         <div className="flex items-center gap-2">
-          <img
-            className="md:w-[3em] w-[2em]"
-            src="../src/assets/list.png"
-            alt="icon"
-          />
-          <span className="md:text-xl font-bold text-[12px]">
+          <img className="md:w-[2em] w-[2em]" src={logo} alt="icon" />
+          <span className="md:text-lg font-bold text-[12px]">
             My Smart List
           </span>
         </div>
@@ -59,7 +56,7 @@ const Header = () => {
                       logoutParams: { returnTo: window.location.origin },
                     })
                   }
-                  className="cursor-pointer bg-red-500 text-white font-semibold py-1 px-2 md:py-2 md:px-4 rounded-md shadow-md hover:bg-red-600 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+                  className="cursor-pointer bg-red-500 text-white font-semibold  py-1 px-2 md:py-1 md:px-4 rounded-md shadow-md hover:bg-red-600 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
                 >
                   Logout
                 </button>
@@ -71,7 +68,7 @@ const Header = () => {
             <li>
               <button
                 onClick={() => loginWithRedirect()}
-                className="cursor-pointer bg-red-500 text-white font-semibold py-1 px-2 md:py-2 md:px-4 rounded-md shadow-md hover:bg-red-600 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+                className="cursor-pointer bg-red-500 text-white font-semibold py-1 px-2 md:py-1 md:px-4 rounded-md shadow-md hover:bg-red-600 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
               >
                 Login
               </button>
