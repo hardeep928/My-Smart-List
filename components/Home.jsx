@@ -1,6 +1,7 @@
 import Inspiration from "./Inspiration";
 import WhyUse from "./WhyUse";
 import { useAuth0 } from "@auth0/auth0-react";
+import checklist from "../src/assets/Checklist-cuate.png";
 
 const Home = () => {
   const { loginWithRedirect } = useAuth0();
@@ -38,7 +39,7 @@ const Home = () => {
 
         <img
           className="md:max-w-[35em] max-w-[14em] mt-8 md:mt-0"
-          src="../src/assets/Checklist-cuate.png"
+          src={checklist}
           alt="Checklist Image"
         />
       </div>

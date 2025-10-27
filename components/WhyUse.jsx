@@ -1,4 +1,7 @@
 import React from "react";
+import target from "../src/assets/target.png";
+import folder from "../src/assets/folder.png";
+import cloud from "../src/assets/creative-cloud.png";
 
 const WhyUse = () => {
   return (
@@ -10,22 +13,14 @@ const WhyUse = () => {
       <div className="container mb-5">
         <div className="grid md:grid-cols-3 gap-4 md:max-w-5xl max-w-xl mx-auto w-[90%] md:mr-3.5 mr-auto">
           <div className="bg-gray-100 p-6 rounded-2xl ">
-            <img
-              className="max-w-1/5"
-              src="../src/assets/target.png"
-              alt="Target"
-            />
+            <img className="max-w-1/5" src={target} alt="Target" />
             <br />
             <h1 className="font-semibold text-2xl pb-1.5 mb-2">Stay Focused</h1>
             <p>Stay focused on your tasks and goals.</p>
           </div>
 
           <div className="bg-gray-100 p-6 rounded-2xl">
-            <img
-              className="max-w-1/5"
-              src="../src/assets/folder.png"
-              alt="Target"
-            />
+            <img className="max-w-1/5" src={folder} alt="Folder" />
             <br />
             <h1 className="font-semibold text-2xl pb-1.5 mb-2">
               Organize Easily
@@ -34,11 +29,7 @@ const WhyUse = () => {
           </div>
 
           <div className="bg-gray-100 p-6  rounded-2xl">
-            <img
-              className="max-w-1/5"
-              src="../src/assets/creative-cloud.png"
-              alt="Target"
-            />
+            <img className="max-w-1/5" src={cloud} alt="Cloud" />
             <br />
             <h1 className="font-semibold text-2xl pb-1.5 mb-2">
               Access Anywhere

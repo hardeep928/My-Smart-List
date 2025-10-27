@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { fetchRandomQuote } from "../src/hooks/quoteAPI";
+import mountainImg from "../src/assets/mountains.jpg";
 
 const Inspiration = () => {
   const [quote, setQuote] = useState("Discipline beats motivation.");
@@ -19,7 +20,7 @@ const Inspiration = () => {
       <div className="pb-3 bg-gray-300 mx-4 md:max-w-4xl rounded-2xl mb-2 md:mx-auto text-center md:flex md:justify-center md:gap-10">
         <img
           className="max-w-full md:max-w-6/12 rounded-2xl mt-3 md:ml-3"
-          src="../src/assets/mountains.jpg"
+          src={mountainImg}
           alt="mountains"
         />
         <div className="details mx-auto px-4 py-3 md:flex md:flex-col justify-center text-center">
