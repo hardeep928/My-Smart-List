@@ -54,7 +54,7 @@ const MyLists = ({ data, setData, setEditIndex }) => {
                   onClick={() => deleteTask(index)}
                   className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
                 >
-                  Delete
+                  Completed
                 </button>
               </div>
             </div>
@@ -65,3 +65,4 @@ const MyLists = ({ data, setData, setEditIndex }) => {
   );
 };
 export default MyLists;
+
